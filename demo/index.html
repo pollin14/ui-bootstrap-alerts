@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Example - example-example77-production</title>
+
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular.min.js"></script>
+	<script src="../src/AlertService.js"></script>
+	<script src="../src/AlertCtrl.js"></script>
+	<script src="../src/alerts-directive.js"></script>
+	<script src="app.js"></script>
+	
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	
+</head>
+
+<body ng-app="Demo" ng-controller="DemoController">
+	<alerts></alerts>
+	<button ng-click="error()" class="btn btn-danger">Error</button>
+	<button ng-click="danger()" class="btn btn-danger">Danger</button>
+	<button ng-click="warning()" class="btn btn-warning">Warning</button>
+	<button ng-click="success()" class="btn btn-success">Success</button>
+	<button ng-click="info()" class="btn btn-info">Info</button>
+</body>
+
+</html>
